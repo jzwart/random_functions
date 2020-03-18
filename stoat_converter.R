@@ -54,7 +54,7 @@ height_in_stoats = function(height, units){
   possible_units <- c("cm", "in", "m", "ft")
   units <- match.arg(units, possible_units)
 
-  stoats <- round(height * legnth_converter$stoats[which(units == height_converter$from_unit)], digits = 2)
+  stoats <- round(height * height_converter$stoats[which(units == height_converter$from_unit)], digits = 2)
 
   return(stoats)
 }
